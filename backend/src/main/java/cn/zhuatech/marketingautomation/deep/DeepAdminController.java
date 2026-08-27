@@ -1,0 +1,2 @@
+/* Copyright 2026 上海如静知华信息科技有限公司 · https://www.zhuatech.cn/ */
+package cn.zhuatech.marketingautomation.deep;import cn.zhuatech.marketingautomation.common.ApiResponse;import org.springframework.web.bind.annotation.*;@RestController @RequestMapping("/api/admin/marketing-ops") public class DeepAdminController{private final DeepDomainService s;public DeepAdminController(DeepDomainService s){this.s=s;}@PostMapping("/campaigns/{id}/approve")ApiResponse<?> approve(@PathVariable Long id){return ApiResponse.ok(s.approve(id));}}

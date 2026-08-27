@@ -36,3 +36,17 @@
 | `consentRate` | double | 有效同意率(%) |
 
 接口统一返回 `ApiResponse`；业务冲突使用 HTTP 409，参数错误使用 400，未认证使用 401，无权限使用 403。
+
+## 专业营销增长接口
+
+| 方法 | 路径 | 说明 |
+| --- | --- | --- |
+| GET | `/api/marketing-ops/dashboard` | 活动、同意和触点总览 |
+| POST | `/api/marketing-ops/audiences` | 创建动态受众 |
+| POST | `/api/marketing-ops/campaigns` | 创建营销活动 |
+| POST | `/api/marketing-ops/campaigns/{id}/journeys` | 配置自动旅程 |
+| POST | `/api/admin/marketing-ops/campaigns/{id}/approve` | 批准活动 |
+| POST | `/api/marketing-ops/campaigns/{id}/launch` | 启动活动 |
+| POST | `/api/marketing-ops/consents` | 记录渠道营销同意 |
+| POST | `/api/marketing-ops/consents/{id}/revoke` | 撤回同意 |
+| POST | `/api/marketing-ops/campaigns/{id}/touch-events` | 记录合规触点和旅程评分 |

@@ -66,3 +66,7 @@ Copyright © 2026 上海如静知华信息科技有限公司。
 | ![微信咨询二维码一](docs/images/zhuatech-wechat-consulting.png) | ![微信咨询二维码二](docs/images/zhuatech-wechat-consulting-2.png) |
 
 SEO：营销自动化平台、MKT系统源码、企业数字化、Java企业系统、Vue管理系统、知华科技、上海如静知华信息科技有限公司。
+
+## V2.0 专业营销增长域
+
+新增动态受众、营销活动、自动旅程、联系人渠道同意和营销触点模型。活动审批前强制校验有效受众、预算与旅程；触达前实时校验联系人对目标渠道的有效同意，旅程按事件自动累计线索评分，并保留收入归因字段。专业入口为“增长编排中心”，API 根路径为 `/api/marketing-ops`。
