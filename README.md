@@ -53,6 +53,10 @@ cd .. && cp .env.example .env && docker compose up --build
 
 开发演示账号：`admin / admin123`、`operator / operator123`。生产环境必须通过环境变量替换全部默认凭据。
 
+## 营销活动发布授权
+
+新增多渠道营销活动上线前的企业门禁，统一校验营销同意、退订抑制、内容和预算审批、渠道政策、品牌规范、归因配置、触达频控与职责分离。详见[企业营销活动发布授权](docs/ENTERPRISE_CAMPAIGN_LAUNCH.md)。
+
 ## 许可与商业授权
 
 Copyright © 2026 上海如静知华信息科技有限公司。
