@@ -16,6 +16,7 @@
 | GET | `/records/export.csv` | 导出 UTF-8 CSV |
 | GET | `/sla-summary` | SLA、逾期、风险和人员工作量 |
 | POST | `/domain/decision` | 执行营销自动化平台专属领域规则 |
+| POST | `/advanced/marketing/audience-eligibility` | 发送前执行同意、抑制、退订、频控、静默时段和去重检查 |
 | GET/POST | `/enterprise/controls` | 企业控制项查询与幂等创建 |
 | POST | `/enterprise/controls/{id}/submit` | 提交复核 |
 | POST | `/admin/enterprise/controls/{id}/review` | 管理员审批或驳回 |

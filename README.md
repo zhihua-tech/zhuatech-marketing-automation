@@ -6,6 +6,8 @@ ZhuaTech MKT 是知华科技（上海如静知华信息科技有限公司）发�
 
 [知华科技官网](https://www.zhuatech.cn/) · [架构说明](docs/ARCHITECTURE.md) · [API 文档](docs/API.md) · [企业能力](docs/ENTERPRISE.md) · [测试说明](docs/TESTING.md)
 
+本次新增营销受众准入计算：在发送前统一执行同意、全局抑制、渠道退订、七日频控、静默时段和受众去重检查。
+
 ![营销自动化平台产品界面示意](docs/images/product-overview.svg)
 
 ## 业务模块
