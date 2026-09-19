@@ -4,15 +4,24 @@ package cn.zhuatech.marketingautomation.service;
 import static org.assertj.core.api.Assertions.assertThat;
 import org.junit.jupiter.api.Test;
 
+/**
+ * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+ */
 class CampaignLaunchAuthorizationServiceTest {
     private final CampaignLaunchAuthorizationService service = new CampaignLaunchAuthorizationService();
 
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     @Test void launchesCompliantCampaign() {
         var result = service.assess(new CampaignLaunchAuthorizationService.Request("CMP-100", true, true, true,
                 true, true, true, true, true, true, true, true));
         assertThat(result.decision()).isEqualTo(CampaignLaunchAuthorizationService.Decision.LAUNCH);
     }
 
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     @Test void routesOperationalReadinessToReview() {
         var result = service.assess(new CampaignLaunchAuthorizationService.Request("CMP-101", true, true, true,
                 false, true, true, false, false, false, true, true));
@@ -20,6 +29,9 @@ class CampaignLaunchAuthorizationServiceTest {
         assertThat(result.decision()).isEqualTo(CampaignLaunchAuthorizationService.Decision.REVIEW);
     }
 
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     @Test void blocksNonCompliantCampaign() {
         var result = service.assess(new CampaignLaunchAuthorizationService.Request("", false, false, false,
                 false, false, false, false, false, false, false, false));
