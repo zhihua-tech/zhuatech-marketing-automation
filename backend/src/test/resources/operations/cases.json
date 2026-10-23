@@ -1,0 +1,50 @@
+[
+  {
+    "patch": {},
+    "expected": {
+      "decision": "PASS",
+      "eligible": "#800",
+      "plannedCost": "#160",
+      "budgetRemaining": "#40"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "optedOut": "900"
+    },
+    "expected": {
+      "decision": "REVIEW",
+      "eligible": "#0"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "budget": "100"
+    },
+    "expected": {
+      "decision": "HOLD"
+    },
+    "error": false
+  },
+  {
+    "patch": {
+      "complained": "1000"
+    },
+    "expected": {},
+    "error": true
+  },
+  {
+    "patch": {
+      "contacts": "0",
+      "optedOut": "0",
+      "complained": "0",
+      "frequencyBlocked": "0"
+    },
+    "expected": {
+      "decision": "REVIEW"
+    },
+    "error": false
+  }
+]

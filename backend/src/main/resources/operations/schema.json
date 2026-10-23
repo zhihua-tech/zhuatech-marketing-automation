@@ -1,0 +1,93 @@
+{
+  "slug": "marketing-automation",
+  "title": "互斥排除人群与触达预算试算",
+  "fields": [
+    {
+      "key": "id",
+      "label": "记录编号",
+      "type": "ID"
+    },
+    {
+      "key": "contacts",
+      "label": "候选人数",
+      "type": "NUMBER",
+      "scale": 0,
+      "min": "0",
+      "max": "1000000"
+    },
+    {
+      "key": "optedOut",
+      "label": "退订人数",
+      "type": "NUMBER",
+      "scale": 0,
+      "min": "0",
+      "max": "1000000"
+    },
+    {
+      "key": "complained",
+      "label": "投诉人数",
+      "type": "NUMBER",
+      "scale": 0,
+      "min": "0",
+      "max": "1000000"
+    },
+    {
+      "key": "frequencyBlocked",
+      "label": "频控人数",
+      "type": "NUMBER",
+      "scale": 0,
+      "min": "0",
+      "max": "1000000"
+    },
+    {
+      "key": "unitCost",
+      "label": "每次触达成本",
+      "type": "NUMBER",
+      "scale": 2,
+      "min": "0",
+      "max": "1000000000000"
+    },
+    {
+      "key": "budget",
+      "label": "本次预算",
+      "type": "NUMBER",
+      "scale": 2,
+      "min": "0",
+      "max": "1000000000000"
+    }
+  ],
+  "columns": [
+    {
+      "key": "eligible",
+      "label": "可触达人数"
+    },
+    {
+      "key": "plannedCost",
+      "label": "预计成本"
+    },
+    {
+      "key": "budgetRemaining",
+      "label": "预算余量"
+    }
+  ],
+  "description": "按互不重叠的退订、投诉和频控人群计算可触达数量和预算缺口；不发送营销消息。",
+  "owner": "上海如静知华信息科技有限公司",
+  "website": "https://www.zhuatech.cn/",
+  "authorization": "商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。",
+  "version": 1,
+  "notes": "输入均须为已获授权的同口径数据。金额固定人民币元；比例为百分数。核算结果只用于复核，未审批、未写库、未发起外部调用，也未触发付款、签名、资料销毁或设备控制。建议不构成法律、安全、会计或碳核证结论。",
+  "sample": {
+    "asOf": "2026-10-23",
+    "records": [
+      {
+        "id": "ITEM-001",
+        "contacts": "1000",
+        "optedOut": "100",
+        "complained": "20",
+        "frequencyBlocked": "80",
+        "unitCost": "0.2",
+        "budget": "200"
+      }
+    ]
+  }
+}
